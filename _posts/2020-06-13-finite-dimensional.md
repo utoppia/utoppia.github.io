@@ -2,54 +2,54 @@
 layout: post 
 author: utoppia
 date: 2020-06-13
-title: Section 2 -- Linear Algebra Done Right
+title: 2. Finite-Dimensional Vector Spaces
+subtitle: <Linear Algebra Done Right>
+tags: math linear-algebra-done-right
 ---
 
-## Finite-Dimensional Vector Spaces
-
-1. <span style='color: cyan'> Notation </span> $\mathrm{F}, V$
+1. <span class='p-notation'> Notation </span> $\mathrm{F}, V$
 > + $\mathrm{F}$ denotes $\mathrm{R}$ or $\mathrm{C}$.
 > + $V$ denotes a vector space over $\mathrm{F}$.
 
 ### Span and Linear Independence 
 
-2. <span style='color: cyan'> Notation </span> ***list of vectors***
+2. <span class='p-notation'> Notation </span> ***list of vectors***
 > We will usually write lists of vectors without surrounding parentheses.
 
-3. <span style='color: red'> Definition </span> ***linear combination***
+3. <span class='p-definition'> Definition </span> ***linear combination***
 > A ***linear combination*** of a list $v_1, \ldots, v_m$ of vectors in $V$ is a vector of the form \[ a_1v_1 + \dots + a_mv_m ,\] where $a_1, \ldots, a_m \in \mathrm{F}$.
 
-5. <span style='color: red'> Definition </span> ***span*** 
+5. <span class='p-definition'> Definition </span> ***span*** 
 > The set of all linear combinations of a list of vectors $v_1, \ldots, v_m$ in $V$ is called the ***span*** of $v_1, \ldots, v_m$, denoted $\text{span}(v_1,\ldots, v_m)$. In other words, \[ \text{span}(v_1, \ldots, v_m) = \{ a_1v_1 + \dots + a_mv_m:a_1, \ldots, a_m \in \mathrm{F}\}. \] The span of the empty list $()$ is defined to be $\{0\}$.
 
 7. Span is the smallest containing subspace 
 > The span of a list of vectors in $V$ is the smallest subspace of $V$ containing all the vectors in the list.
 
-8. <span style='color: red'> Definition </span> ***spans***
+8. <span class='p-definition'> Definition </span> ***spans***
 > If $\text{span}(v_1, \ldots, v_m)$ equals $V$, we say that $v_1, \ldots, v_m$ ***spans*** $V$.
 
-10. <span style='color: red'> Definition </span> ***finite-dimensional vector space***
+10. <span class='p-definition'> Definition </span> ***finite-dimensional vector space***
 > A vector space is called ***finite-dimensional*** if some list of vectors in it spans the space.
 
-11. <span style='color: red'> Definition </span> ***polynomial***, $\mathcal{P}(\mathrm{F})$
+11. <span class='p-definition'> Definition </span> ***polynomial***, $\mathcal{P}(\mathrm{F})$
 > + A function $p: \mathrm{F} \to \mathrm{F}$ is called a ***polynomial*** with coeffecients in $\mathrm{F}$ if there exist $a_0, \ldots, a_m \in \mathrm{F}$ such that \[ p(z) = a_0 + a_1z + \dots + a_mz^m \] for all $z \in \mathrm{F}$.
 > + $\mathcal{P}(\mathrm{F})$ is the set of all polynomials with coeffecients in $\mathrm{F}$.
 
-12. <span style='color: red'> Definition </span> ***degree of a polynomial***, $\text{deg }p$
+12. <span class='p-definition'> Definition </span> ***degree of a polynomial***, $\text{deg }p$
 > + A polynomial $p \in \mathcal{P}(\mathrm{F})$ is said to have ***degree*** $m$ if there exist scalars $a_0, \ldots, a_m \in \mathrm{F}$ with $a_m \neq 0$ such that \[ p(z) = a_0 + a_1z + \dots + a_mz^m \] for all $z \in \mathrm{F}$. If $p$ has degree $m$, we write $\text{deg }p = m$.
 > + The polynomial that is identically $0$ is said to have degree $-\infty$.
 
-13. <span style='color: red'> Definition </span> $\mathcal{P}_m(\mathrm{F})$
+13. <span class='p-definition'> Definition </span> $\mathcal{P}_m(\mathrm{F})$
 > For $m$ a nonnegative integer, $\mathcal{P}_m(\mathrm{F})$ denote the set fo all polynomials with coeffecients in $\mathrm{F}$ and degree at most $m$.
 
-15. <span style='color: red'> Definition </span> ***infinite-dimensional vector space***
+15. <span class='p-definition'> Definition </span> ***infinite-dimensional vector space***
 > A vector space is called ***infinite-dimensional*** if it is not finite-dimensional.
 
-17. <span style='color: red'> Definition </span> ***linear independent***
+17. <span class='p-definition'> Definition </span> ***linear independent***
 > + A list $v_1, \ldots, v_m$ of vectors in $V$ is called ***linear independent*** if the only choice of $a_1, \ldots, a_m \in \mathrm{F}$ that makes $a_1v_1 + \dots + a_mv_m$ equals $0$ is $a_1 = \dots = a_m = 0$.
 > + The empty list $()$ is also declared to be linearly independent.
 
-19. <span style='color: red'> Definition </span> ***linearly dependent***
+19. <span class='p-definition'> Definition </span> ***linearly dependent***
 > + A list of vectors in $V$ is called ***linearly dependent*** if it is not linearly independent.
 > + In other words, a list $v_1, \ldots, v_m$ of vectors in $V$ is liearly dependent if there exist $a_1, \ldots, a_m \in \mathrm{F}$, not all $0$, such that $a_1v_1 + \dots + a_mv_m = 0$.
 
@@ -66,7 +66,7 @@ title: Section 2 -- Linear Algebra Done Right
 
 ### Bases 
 
-27. <span style='color: red'> Definition </span>***basis***
+27. <span class='p-definition'> Definition </span>***basis***
 > A ***basis*** of $V$ is a list of vectors in $V$ that is linearly independent and spans $V$.
 
 29. Criterion for basis 
@@ -90,7 +90,7 @@ where $a_1, \ldots, a_n \in \mathrm{F}$.
 35. Basis length does not depend on basis 
 > Any two bases of a finite-dimensional vector space have the same length.
 
-36. <span style='color: red'> Definition </span> ***dimension***, $\dim{V}$
+36. <span class='p-definition'> Definition </span> ***dimension***, $\dim{V}$
 > + The ***dimension*** of a finite-dimensional vector space is the length of any basis of the vector space.
 > + The dimension of $V$ (if $V$ is finite-dimensional) is denoted by $\dim{V}$.
 

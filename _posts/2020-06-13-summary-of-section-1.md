@@ -1,13 +1,14 @@
 ---
 layout: post
 author: utoppia
-title: Section 1 -- Linear Algebra Done Right
+title: 1. Vector Spaces
+subtitle: <Linear Algebra Done Right>
+tags: math linear-algebra-done-right
 ---
-## Vector Spaces
 
 ### $\mathrm{R}^n$ and $\mathrm{C}^n$
 
-1. **Definition** complex numbers 
+1. <span class='p-definition'> Definition </span> complex numbers 
 > + A **complex number** is an ordered pair $(a,b)$, where $a,b \in \mathrm{R}$, but we will write this as $a + bi$.
 > + The set of all complex numbers is denoted by $\mathrm{C}$: \[\mathrm{C} = \{ a+bi: a,b \in \mathrm{R} \}.\]
 > + ***Addition and multiplication*** on $\mathrm{C}$ are defined by \[ (a+bi) + (c+di) = (a+c) + (b+d)i, \] \[ (a+bi)(c+di) = (ac-bd) + (ad+bc)i; \] here $a,b,c,d \in \mathrm{R}$.
@@ -18,7 +19,7 @@ title: Section 1 -- Linear Algebra Done Right
 > + **identities** \[ \lambda + 0 = \lambda \quad \text{and} \quad \lambda 1 = \lambda \quad \text{for all} \quad \lambda \in \mathrm{C}; \]
 > + **additive inverse** \[ \text{for every } \alpha \in \mathrm{C} \text{ with } \alpha \neq 0, \text{ there exists a unique } \beta \in \mathrm{C} \text{ such that } \alpha \beta = 1;  \]
 > + **distributive property** \[ \lambda (\alpha + \beta) = \lambda \alpha + \lambda \beta \quad \text{for all} \quad \lambda, \alpha, \beta \in \mathrm{C}. \]
-5. **Definition** $-\alpha$, ***substraction***, $1/\alpha$, ***division***
+5. <span class='p-definition'> Definition </span> $-\alpha$, ***substraction***, $1/\alpha$, ***division***
 > Let $\alpha, \beta \in \mathrm{C}$.
 > + Let $-\alpha$ denote the additive inverse of $\alpha$. Thus $-\alpha$ is the unique complex number such that \[ \alpha + (-\alpha) = 0. \]
 > + **Subtraction** on $\mathrm{C}$ is defined by \[ \beta - \alpha = \beta + (-\alpha). \]
@@ -26,13 +27,13 @@ title: Section 1 -- Linear Algebra Done Right
 > + **Divition** on $\mathrm{C}$ is defined by \[ \beta / \alpha = \beta (1/\alpha). \]
 6. **Notation** $\mathrm{F}$
 > $\mathrm{F}$ stands for either $\mathrm{R}$ or $\mathrm{C}$.
-8. **Definition** ***list, length***
+8. <span class='p-definition'> Definition </span> ***list, length***
 > Suppose $n$ is a nonnegative integer. A ***list*** of ***length*** $n$ is an ordered collection of $n$ elements (which might be numbers, other lists, or more abstract entries) separated by commas and surrounded by parentheses. A list of length $n$ looks like this: \[ (x_1, \ldots, x_n). \] Two lists are equal if and only if they have the same length and the same elements in the same order.
 
-10. **Definition** $\mathrm{F}^n$
+10. <span class='p-definition'> Definition </span> $\mathrm{F}^n$
 > $\mathrm{F}^n$ is the set of all lists of length $n$ of elements of $\mathrm{F}^n$: \[ \mathrm{F}^n = \{(x_1,\ldots,x_n):x_j \in \mathrm{F} \text{ for } j=1, \ldots, n \}. \] For $(x_1, \ldots, x_n) \in \mathrm{F}^n$ and $j \in \{1,\ldots,n\}$, we say that $x_j$ is the $j^{\text{th}}$ ***coordinate*** of $(x_1, \ldots, x_n)$.
 
-12. **Definition** ***addition in*** $\mathrm{F}^n$
+12. <span class='p-definition'> Definition </span> ***addition in*** $\mathrm{F}^n$
 > ***Addition*** in $\mathrm{F}^n$ is defined by adding corresponding coordinates: \[ (x_1,\ldots,x_n) + (y_1, \ldots, y_n) = (x_1 +y_1, \ldots, x_n + y_n). \]
 
 13. Commutativity of addition in $\mathrm{F}^n$
@@ -49,11 +50,11 @@ title: Section 1 -- Linear Algebra Done Right
 
 ### Definition of Vector Space 
 
-18. <span style='color: red'> Definition </span> ***addition, scalar multiplication***
+18. <span class='p-definition'> Definition </span> ***addition, scalar multiplication***
 > + An ***addition*** on a set $V$ is a funtion that assigns an element $u + v \in V$ to each pair of elements $u, v \in V$.
 > + A ***scalar multiplication*** on a set $V$ is a function that assigns an element $\lambda v \in V$ to each $\lambda \in \mathrm{F}$ and each $v \in V$.
 
-19. <span style="color: red"> Definition </span> ***vector space***
+19. <span class='p-definition'> Definition </span> ***vector space***
 > A ***vector space*** is a set $V$ along with an addition on $V$ and a scalar multiplication on $V$ such that the following properties hold:
 > + **commutativity** \[ u + v = v + u \quad \text{for all} \quad u,v \in V; \]
 > + **associativity** \[ (u+v) + w = u + (v+w) \quad \text{for all} \quad u,v,w \in V,\] \[ (ab)v = a(bv) \quad \text{for all} \quad a,b\in \mathrm{F} \text{ and } v \in V. \]
@@ -66,14 +67,14 @@ title: Section 1 -- Linear Algebra Done Right
 > + **distributive properties**
     > $a(u+v) = au + av$ and $(a+b)v = av + bv$ for all $a,b \in \mathrm{F}$ and all $u,v \in V$.
 
-20. <span style='color: red'> Definition </span> ***vector, point***
+20. <span class='p-definition'> Definition </span> ***vector, point***
 > Elements of a vector space are called ***vectors** or ***points***.
 
-21. <span style='color: red'> Definition </span> ***real vector space, complex vector space***
+21. <span class='p-definition'> Definition </span> ***real vector space, complex vector space***
 > + A vector space over $\mathrm{R}$ is called ***real vector space***.
 > + A vector space over $\mathrm{C}$ is called ***complex vector space***.
 
-22. <span style='color: cyan'> Notation </span> $\mathrm{F}^S$
+22. <span class='p-notation'> Notation </span> $\mathrm{F}^S$
 > + If $S$ is a set, then $\mathrm{F}^S$ denotes the set of functions from $S$ to $\mathrm{F}$.
 > + For $f, g \in \mathrm{F}^S$, the ***sum*** $f + g \in \mathrm{F}^S$ is the function defined by \[ (f+g)(x) = f(x) + g(x) \] for all $x \in S$.
 > + For $\lambda \in \mathrm{F}$ and $f \in \mathrm{F}^S$, the ***product*** $\lambda f \in \mathrm{F}^S$ is the function defined by \[ (\lambda f)(x) = \lambda f(x) \] for all $x \in S$.
@@ -84,12 +85,12 @@ title: Section 1 -- Linear Algebra Done Right
 26. Unique additive inverse
 > Every element in a vector space has a unique additive inverse.
 
-27. <span style='color: cyan'> Notation </span>$-v, w-v$
+27. <span class='p-notation'> Notation </span>$-v, w-v$
 > Let $v, w \in V$. Then 
 > + $-v$ denotes the additive inverse of $v$;
 > + $w - v$ is defined to be $w + (-v)$.
 
-28. <span style='color: cyan'> Notation </span> $V$
+28. <span class='p-notation'> Notation </span> $V$
 > $V$ denotes a vector space over $\mathrm{F}$.
 
 29. The number $0$ times a vector 
@@ -103,7 +104,7 @@ title: Section 1 -- Linear Algebra Done Right
 
 ### Subspaces
 
-32. <span style='color: red'> Definition </span> ***subspace***
+32. <span class='p-definition'> Definition </span> ***subspace***
 > A subset $U$ of $V$ is called ***subspace*** of $V$ if $U$ is also a vector space (using the same addition and scalar multiplication as on $V$).
 
 33. Conditions for a subspace
@@ -115,13 +116,13 @@ title: Section 1 -- Linear Algebra Done Right
 > + **closed undert scalar multiplication**
     $a \in mathrm{F}$ and $u \in U$ implies $au \in U$.
 
-36. <span style='color: red'> Definition </span> ***sum of subsets***
+36. <span class='p-definition'> Definition </span> ***sum of subsets***
 > Suppose $U_1, \ldots, U_m$ are subsets of $V$. The ***sum*** of $U_1,\ldots, U_m$, denoted $U_1 + \dots + U_m$, is the set of all posible sums of elements of $U_1, \ldots, U_m$. More precisely, \[ U_1 + \dots + U_m = \{u_1+\dots+u_m:u_1 \in U_1, \ldots, u_m \in U_m\}. \]
 
 39. Sum of subspaces is the smallest containing subspace 
 > Suppose $U_1, \ldots, U_m$ are subspaces of $V$. Then $U_1 + \dots + U_m$ is the smallest subspace of $V$ containing $U_1, \ldots, U_m$.
 
-40. <span style='color: red'> Definition </span> ***direct sum***
+40. <span class='p-definition'> Definition </span> ***direct sum***
 > Suppose $U_1, \ldots, U_m$ are subspaces of $V$.
     > + The sum $U_1 + \dots + U_m$ is called ***direct sum*** if each element of $U_1 + \dots + U_m$ can be written in only one way as a sum $u_1 + \dots + u_m$, where each $u_j$ is in $U_j$.
     > + If $U_1 + \dots + U_m$ is a direct sum, then $U_1 \oplus \dots \oplus U_m$ denotes $U_1 + \dots + U_m$, with $\oplus$ notation serving as an indication that this is a direct sum.

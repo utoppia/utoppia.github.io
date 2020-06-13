@@ -4,8 +4,9 @@
   {%- include head.html -%}
 
   <body>
-
-  {%- include my-head.html -%}
+    <div class="script-for-mathjax">
+      {%- include mathjax-config.html -%}
+    </div>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}

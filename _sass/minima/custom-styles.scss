@@ -1,0 +1,68 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+@import 'fontawesome/scss/fontawesome.scss';
+@import "fontawesome/scss/solid.scss";
+@import "fontawesome/scss/regular.scss";
+
+.post-subtitle {
+    text-align: right;
+    font-style: italic;
+    &:before {
+        content: "--";
+    }
+}
+
+.p-definition {
+    color: green;
+    font-weight: bold;
+
+    @extend %fa-icon;
+    @extend .far;
+    &:before {
+        content: fa-content($fa-var-lightbulb);
+    }
+}
+
+.p-notation {
+    color: burlywood;
+    font-weight: bold;
+
+    @extend %fa-icon;
+    @extend .far;
+    &:before {
+        content: fa-content($fa-var-feather);
+    }
+}
+
+.dt-published {
+    @extend %fa-icon;
+    @extend .far;
+    margin-right: 8pt;
+    &:before {
+        content: fa-content($fa-var-clock);
+    }
+}
+
+.p-author {
+    @extend %fa-icon;
+    @extend .fas;
+    margin-right: 2em;
+    &:before{
+        margin-right: 2pt;
+        content: fa-content($fa-var-user);
+    }
+}
+
+.p-tags {
+    text-align: right;
+}
+
+.p-tag {
+    @extend %fa-icon;
+    @extend .fas;
+
+    &:before{
+        content: fa-content($fa-var-tag);
+    }
+}
+
