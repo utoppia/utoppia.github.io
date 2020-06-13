@@ -30,6 +30,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# paginate: 10
+# paginate_path: "/blog/page:num/"
+show_excerpts: false # 展示片段
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
