@@ -11,11 +11,11 @@ tags: math linear-algebra-done-right
 1. <span class='p-notation'> Notation </span> $\mathrm{F}, V, W$
 > - $\mathrm{F}$ denotes $\mathrm{R}$ or $\mathrm{C}$.
 > - $V$ and $W$ denote vector spaces over $\mathrm{F}$.
-2. <span class='p-definition'> Definition </span>: linear map
+2. <span class='p-definition'> Definition </span> linear map
 > A ***linear map*** from $V$ to $W$ is a function $T: V \to W$ with the following properties:
     - **additicity** \[ T(u+v) = Tu + Tv \text{ for all } u,v\in V;\]
     - **homogeneity**: \[ T(\lambda v) = \lambda (Tv) \text{ for all } \lambda \in \mathrm{F} \text{ and all } v \in V.\]
-3. <span class='p-notation'> Notation </span> $\mathcal{L}(V,W)
+3. <span class='p-notation'> Notation </span> $\mathcal{L}(V,W)$
 > The set of all linear maps from $V$ to $W$ is denoted $\mathcal{L}(V,W)$.
 5. Linear maps and basis of domain
 > Suppose $v_1, \ldots, v_n$ is a basis of $V$ and $w_1, \ldots, w_n \in W$. Then there exists a **unique** linear map $T:V \to W$ such that \[ Tv_j = w_j \] for each $j=1,\ldots,n$.

@@ -19,13 +19,15 @@ tags: math linear-algebra-done-right
 > + **identities** \[ \lambda + 0 = \lambda \quad \text{and} \quad \lambda 1 = \lambda \quad \text{for all} \quad \lambda \in \mathrm{C}; \]
 > + **additive inverse** \[ \text{for every } \alpha \in \mathrm{C} \text{ with } \alpha \neq 0, \text{ there exists a unique } \beta \in \mathrm{C} \text{ such that } \alpha \beta = 1;  \]
 > + **distributive property** \[ \lambda (\alpha + \beta) = \lambda \alpha + \lambda \beta \quad \text{for all} \quad \lambda, \alpha, \beta \in \mathrm{C}. \]
+
 5. <span class='p-definition'> Definition </span> $-\alpha$, ***substraction***, $1/\alpha$, ***division***
 > Let $\alpha, \beta \in \mathrm{C}$.
 > + Let $-\alpha$ denote the additive inverse of $\alpha$. Thus $-\alpha$ is the unique complex number such that \[ \alpha + (-\alpha) = 0. \]
 > + **Subtraction** on $\mathrm{C}$ is defined by \[ \beta - \alpha = \beta + (-\alpha). \]
 > + For $\alpha \neq 0$, let $1/\alpha$ denote the multiplicative inverse of $\alpha$. Thus $1/\alpha$ is the unique complex number such that \[ \alpha(1/\alpha) = 1. \]
 > + **Divition** on $\mathrm{C}$ is defined by \[ \beta / \alpha = \beta (1/\alpha). \]
-6. **Notation** $\mathrm{F}$
+
+6. <span class="p-notation"> Notation </span> $\mathrm{F}$
 > $\mathrm{F}$ stands for either $\mathrm{R}$ or $\mathrm{C}$.
 8. <span class='p-definition'> Definition </span> ***list, length***
 > Suppose $n$ is a nonnegative integer. A ***list*** of ***length*** $n$ is an ordered collection of $n$ elements (which might be numbers, other lists, or more abstract entries) separated by commas and surrounded by parentheses. A list of length $n$ looks like this: \[ (x_1, \ldots, x_n). \] Two lists are equal if and only if they have the same length and the same elements in the same order.
@@ -39,13 +41,13 @@ tags: math linear-algebra-done-right
 13. Commutativity of addition in $\mathrm{F}^n$
 > If $x, y \in \mathrm{F}^n$, then $x + y = y + x$.
 
-14. *Definition* $0$
+14. <span class='p-definition'> Definition $0$
 > Let $0$ denote the list of length $n$ whose coordinates are all $0$: \[ 0 = (0,\ldots,0). \]
 
-16. *Definition* ***additive inverse in*** $\mathrm{F}^n$
+16. <span class='p-definition'> Definition ***additive inverse in*** $\mathrm{F}^n$
 > For $x \in \mathrm{F}^n$, the ***additive inverse*** of $x$, denoted $-x$, is the vector $-x \in \mathrm{F}^n$ such that \[ x + (-x) = 0. \] 
 
-17. *Definition* ***scalar multiplication in*** $\mathrm{F}^n$
+17. <span class='p-definition'> Definition ***scalar multiplication in*** $\mathrm{F}^n$
 > The ***product*** of a number $\lambda$ and a vector in $\mathrm{F}^n$ is computed by multiplying each coordinate of the vector by $\lambda$: \[ \lambda(x_1, \ldots, x_n) = (\lambda x_1, \ldots, \lambda x_n); \] here $\lambda \in \mathrm{F}$ and $(x_1,\ldots, x_n) \in \mathrm{F}^n$.
 
 ### Definition of Vector Space 
