@@ -4,6 +4,7 @@
 @import "fontawesome/scss/solid.scss";
 @import "fontawesome/scss/regular.scss";
 @import "fontawesome/scss/brands.scss";
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 .post-subtitle {
     text-align: right;
@@ -104,4 +105,8 @@
     &:before {
         content: fa-content($fa-var-question-circle);
     }
+}
+
+.p-quote {
+    font-family: 'Niconne', cursive;;
 }
