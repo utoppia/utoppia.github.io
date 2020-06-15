@@ -122,7 +122,7 @@ C_{m,1} & \ldots & C_{m,n}
 \end{pmatrix}.
 $$
 
-In other words, $(A+C)_{j,k} = A_{j,k} + C_{j,k}$.
+In other words, $$(A+C)_{j,k} = A_{j,k} + C_{j,k}$$.
 
 #### <span class="p-lemma"> The matrix of the sum of linear maps </span>
 
@@ -147,7 +147,7 @@ $$
     \end{pmatrix}.
 $$
 
-In other words, $(\lambda A)_{j,k} = \lambda A_{j,k}$.
+In other words, $$(\lambda A)_{j,k} = \lambda A_{j,k}$$.
 
 #### <span class="p-lemma"> The matrix of a scalar times a linear map </span>
 
@@ -160,3 +160,46 @@ For $m$ and $n$ positive integers, the set of all $m$-by-$n$ matrices with entri
 #### <span class="p-lemma"> $\dim{\mathrm{F}^{m,n}} = mn$ </span>
 
 Suppose $m$ and $n$ are positive integers. With addition and scalar multiplication defined as above, $\mathrm{F}^{m,n}$ is a vector space with dimension $mn$.
+
+#### <span class="p-definition"> Definition </span> ***matrix multiplication***
+
+Suppose $A$ is an $m$-by-$n$ matrix and $C$ is an $n$-by-$p$ matrix. Then $AC$ is defined to be the $m$-by-$p$ matrix whose entry in row $j$, column $k$, is given by the following equation:
+
+$$ (AC)_{j,k} = \sum_{r=1}^{n} A_{j,r}C_{r,k}. $$
+
+In other words, the entry in row $j$, column $k$, of $AC$ is computed by taking row $j$ of $A$ and column $k$ of $C$, multiplying together corresponding entries, and then summing.
+
+#### <span class="p-lemma"> The matrix of the product of linear maps </span>
+
+If $T \in \mathcal{L}(U,V)$ and $S \in \mathcal{L}(V,W)$, then $\mathcal{M}(ST) = \mathcal{M}(S)\mathcal{M}(T)$.
+
+#### <span class="p-notation"> Notation </span> $A_{j,\cdot}$, $A_{\cdot,k}$
+
+Suppose $A$ is an $m$-by-$n$ matrix.
+
+- If $1 \leq j \leq m$, then $A_{j, \cdot}$ denotes the $1$-by-$n$ matrix consisting of row $j$ of $A$.
+- If $1 \leq k \leq n$, then $A_{\cdot, k}$ denotes the $m$-by-$1$ matrix consisting of column $k$ of $A$.
+
+#### <span class="p-lemma"> Entry of matrix product equals row times column </span>
+
+Suppose $A$ is an $m$-by-$n$ matrix and $C$ is an $n$-by-$p$ matrix. Then 
+
+$$ (AC)_{j,k} = A_{j,\cdot} C_{\cdot,k} $$
+
+for $1 \leq j \leq m$ and $1 \leq k \leq p$.
+
+#### <span class="p-lemma"> Column of matrix product equals matrix times column </span>
+
+Suppose $A$ is an $m$-y-$n$ matrix and $C$ is an $n$-by-$p$ matrix. Then 
+
+\[ (AC){\cdot, k} = AC_{\cdot, k} \]
+
+for $1 \leq k \leq p$.
+
+#### <span class="p-lemma"> Linear combination of columns </span>
+
+Suppose $A$ is an $m$-by-$n$ matrix and $$c = \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}$$ is an $n$-by-$1$ matrix. Then 
+
+\[ Ac = c_1A_{\cdot,1} + \dots + c_n A_{\cdot, n}. \]
+
+In other words, $Ac$ is a linear combination of the columns of $A$, with scalars that multiply the columns coming from $c$.
