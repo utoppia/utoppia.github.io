@@ -49,7 +49,7 @@ Suppose $T \in \mathcal{L}(V,W)$. Then $\text{null }T$ is a subspace of $V$.
 #### <span class='p-definition'> Definition </span>: injective 
 A function $T: V \to W$ is called **injective** if $Tu = Tv$ implies $u=v$.
 
-#### Injectivity is equivalent to null space equals $0$
+#### <span class="p-lemma"> Injectivity is equivalent to null space equals $0$ </span>
 Let $T \in \mathcal{L}(V, W)$. Then $T$ is injective if and only if $\text{null } T = 0$.
 
 #### <span class='p-definition'> Definition </span>: range
