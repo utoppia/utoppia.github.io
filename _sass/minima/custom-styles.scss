@@ -4,6 +4,7 @@
 @import "fontawesome/scss/solid.scss";
 @import "fontawesome/scss/regular.scss";
 @import "fontawesome/scss/brands.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 .post-subtitle {
@@ -22,6 +23,18 @@
     @extend .far;
     &:before {
         content: fa-content($fa-var-lightbulb);
+    }
+}
+
+.p-lemma {
+    color: darkcyan;
+    font-weight: bold;
+
+    @extend %fa-icon;
+    @extend .far;
+    &:before {
+        content: fa-content($fa-var-bell);
+        margin-right: 0.5em;
     }
 }
 
@@ -109,4 +122,9 @@
 
 .p-quote {
     font-family: 'Niconne', cursive;;
+}
+
+// Some Layout 
+.one-third {
+    width: 33%;
 }
