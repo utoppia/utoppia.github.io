@@ -7,6 +7,7 @@ tags: math linear-algebra-done-right
 ---
 
 ### $\mathrm{R}^n$ and $\mathrm{C}^n$
+{: .section}
 
 #### <span class='p-definition'> Definition </span> complex numbers 
 + A **complex number** is an ordered pair $(a,b)$, where $a,b \in \mathrm{R}$, but we will write this as $a + bi$.
@@ -51,6 +52,7 @@ For $x \in \mathrm{F}^n$, the ***additive inverse*** of $x$, denoted $-x$, is th
 The ***product*** of a number $\lambda$ and a vector in $\mathrm{F}^n$ is computed by multiplying each coordinate of the vector by $\lambda$: \[ \lambda(x_1, \ldots, x_n) = (\lambda x_1, \ldots, \lambda x_n); \] here $\lambda \in \mathrm{F}$ and $(x_1,\ldots, x_n) \in \mathrm{F}^n$.
 
 ### Definition of Vector Space 
+{: .section}
 
 #### <span class='p-definition'> Definition </span> ***addition, scalar multiplication***
 + An ***addition*** on a set $V$ is a funtion that assigns an element $u + v \in V$ to each pair of elements $u, v \in V$.
@@ -105,6 +107,7 @@ $a0 = 0$ for every $a \in \mathrm{F}$.
 $(-1)v = -v$ for every $v \in V$.
 
 ### Subspaces
+{: .section}
 
 #### <span class='p-definition'> Definition </span> ***subspace***
 A subset $U$ of $V$ is called ***subspace*** of $V$ if $U$ is also a vector space (using the same addition and scalar multiplication as on $V$).

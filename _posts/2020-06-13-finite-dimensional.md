@@ -11,6 +11,8 @@ tags: math linear-algebra-done-right
 + $V$ denotes a vector space over $\mathrm{F}$.
 
 ### Span and Linear Independence 
+{: .section}
+
 #### <span class='p-notation'> Notation </span> ***list of vectors***
 We will usually write lists of vectors without surrounding parentheses.
 
@@ -63,6 +65,7 @@ In a finite-dimensional vector space, the length if every linearly independent l
 Every subspace of a finite-dimensional vector space if finite-dimensional.
 
 ### Bases 
+{: .section}
 
 #### <span class='p-definition'> Definition </span>***basis***
 A ***basis*** of $V$ is a list of vectors in $V$ that is linearly independent and spans $V$.
@@ -84,6 +87,7 @@ Every linearly independent list of vectors in a finite-dimensional vector space 
 Suppose $V$ is finite-dimensional and $U$ is a subspace if $V$. Then there is a subspace $W$ of $V$ such that $V = U \oplus W$.
 
 ### Dimension
+{: .section}
 
 #### <span class="p-lemma"> Basis length does not depend on basis  </span>
 Any two bases of a finite-dimensional vector space have the same length.

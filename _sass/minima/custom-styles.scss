@@ -34,7 +34,7 @@
     @extend .far;
     &:before {
         content: fa-content($fa-var-bell);
-        margin-right: 0.5em;
+        margin-right: 5pt;
     }
 }
 
@@ -127,4 +127,17 @@
 // Some Layout 
 .one-third {
     width: 33%;
+}
+
+.section {
+    border-bottom-style: solid;
+    padding-bottom: 5pt;
+    width: 80%;
+    color: palevioletred;
+    @extend %fa-icon;
+    @extend .fas;
+    &:before {
+        content: fa-content($fa-var-award);
+        margin-right: 5pt;
+    }
 }

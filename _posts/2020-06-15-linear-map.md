@@ -5,16 +5,18 @@ title: #### Linear Map
 subtile: <Linear Algebra Done Right>
 tags: math linear-algebra-done-right
 ---
-
+ 
 ### Linear Map
+{: .section}
+
 #### <span class='p-notation'> Notation </span> $\mathrm{F}, V, W$
 - $\mathrm{F}$ denotes $\mathrm{R}$ or $\mathrm{C}$.
 - $V$ and $W$ denote vector spaces over $\mathrm{F}$.
 
 #### <span class='p-definition'> Definition </span> linear map
 A ***linear map*** from $V$ to $W$ is a function $T: V \to W$ with the following properties:
-    - **additicity** \[ T(u+v) = Tu + Tv \text{ for all } u,v\in V;\]
-    - **homogeneity**: \[ T(\lambda v) = \lambda (Tv) \text{ for all } \lambda \in \mathrm{F} \text{ and all } v \in V.\]
+- **additicity** \[ T(u+v) = Tu + Tv \text{ for all } u,v\in V;\]
+- **homogeneity**: \[ T(\lambda v) = \lambda (Tv) \text{ for all } \lambda \in \mathrm{F} \text{ and all } v \in V.\]
 
 #### <span class='p-notation'> Notation </span> $\mathcal{L}(V,W)$
 The set of all linear maps from $V$ to $W$ is denoted $\mathcal{L}(V,W)$.
@@ -40,6 +42,8 @@ If $T \in \mathcal{L}(U,V)$ and $S \in \mathcal{V,W}$, then the **product** $ST 
 Suppose $T$ is a linear map from $V$ to $W$. Then $T(0)=0$.
 
 ### Null Spaces and Ranges
+{: .section}
+
 #### <span class='p-definition'> Definition </span>: null space, $\text{null }T$
 For $T \in \mathcal{L}(V,W)$, the **null space** of $T$, denoted $\text{null }T$, is the subset of $V$ consisting of those vectors that $T$ maps to $0$: \[ \text{null }T = \{v \in V: Tv=0 \} .\]
 
@@ -75,7 +79,8 @@ A homogeneous system of linear equations with more variables than equations has 
 #### <span class="p-lemma"> Inhomogeneous system of linear equations </span>
 An inhomogeneous system of linear equations with more equations than variables has no solution for some choice of the constant terms.
 
-### Matrices 
+### Matrices
+{: .section}
 
 #### <span class="p-definition"> Definition </span> ***matrix*** $A_{j,k}$
 
