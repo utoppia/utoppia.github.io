@@ -112,11 +112,16 @@ A subset $U$ of $V$ is called ***subspace*** of $V$ if $U$ is also a vector spac
 #### <span class="p-lemma"> Conditions for a subspace </span>
 A subset $U$ of $V$ is a subspace of $V$ if and only if $U$ satisfies the following three conditions:
 + **additive identity** 
-    $0 \in U$
+    
+    \[ 0 \in U \]
+
 + **closed under addition**
+    
     $u, w \in U$ implies $u + w \in U$;
+
 + **closed undert scalar multiplication**
-    $a \in mathrm{F}$ and $u \in U$ implies $au \in U$.
+    
+    $a \in \mathrm{F}$ and $u \in U$ implies $au \in U$.
 
 #### <span class='p-definition'> Definition </span> ***sum of subsets***
 Suppose $U_1, \ldots, U_m$ are subsets of $V$. The ***sum*** of $U_1,\ldots, U_m$, denoted $U_1 + \dots + U_m$, is the set of all posible sums of elements of $U_1, \ldots, U_m$. More precisely, \[ U_1 + \dots + U_m = \{u_1+\dots+u_m:u_1 \in U_1, \ldots, u_m \in U_m\}. \]
@@ -126,8 +131,8 @@ Suppose $U_1, \ldots, U_m$ are subspaces of $V$. Then $U_1 + \dots + U_m$ is the
 
 #### <span class='p-definition'> Definition </span> ***direct sum***
 Suppose $U_1, \ldots, U_m$ are subspaces of $V$.
-    > + The sum $U_1 + \dots + U_m$ is called ***direct sum*** if each element of $U_1 + \dots + U_m$ can be written in only one way as a sum $u_1 + \dots + u_m$, where each $u_j$ is in $U_j$.
-    > + If $U_1 + \dots + U_m$ is a direct sum, then $U_1 \oplus \dots \oplus U_m$ denotes $U_1 + \dots + U_m$, with $\oplus$ notation serving as an indication that this is a direct sum.
++ The sum $U_1 + \dots + U_m$ is called ***direct sum*** if each element of $U_1 + \dots + U_m$ can be written in only one way as a sum $u_1 + \dots + u_m$, where each $u_j$ is in $U_j$.
++ If $U_1 + \dots + U_m$ is a direct sum, then $U_1 \oplus \dots \oplus U_m$ denotes $U_1 + \dots + U_m$, with $\oplus$ notation serving as an indication that this is a direct sum.
 
 #### <span class="p-lemma"> Condition for a direct sum </span> 
 Suppose $U_1, \ldots, U_m$ are subspaces of $V$. Then $U_1 + \dots + U_m$ is a direct sum if and only if the only way to write $0$ as a sum $u_1 + \dots + u_m$, where each $u_j$ is in $U_j$, is taking each $u_j$ equal to $0$.
